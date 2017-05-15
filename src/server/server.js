@@ -35,7 +35,7 @@ if (process.env.IS_PASSWORD_PROTECTED === 'true') {
   const envPassword = process.env.ENV_PASSWORD;
   const basic = auth.basic({
     'realm': 'Protected'
-  }, (username, password, callback) = > {
+  }, (username, password, callback) => {
     callback(username === envUser && password === envPassword);
   });
   app.use(auth.connect(basic));

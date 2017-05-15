@@ -6,3 +6,4 @@ dist
 assets.json
 yarn.lock
 .env
+public/assets/
